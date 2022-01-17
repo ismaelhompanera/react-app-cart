@@ -1,0 +1,24 @@
+.list-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+  @media (max-width: 768px) {
+    padding: 5% 0;
+  }
+}
+
+//CSS ANIMATION
+.list-item-animation-enter {
+  opacity: 0.01;
+}
+.list-item-animation-enter-active {
+  opacity: 1;
+  transition: opacity 3000ms ease-in;
+}
+.list-item-animation-exit {
+  opacity: 1;
+}
+.list-item-animation-exit-active {
+  opacity: 0.01;
+  transition: opacity 3000ms ease-in;
+}
